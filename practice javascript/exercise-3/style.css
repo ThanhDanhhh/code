@@ -1,0 +1,39 @@
+body{
+  margin:0;
+  overflow: hidden; /* ngăn cuộn trang khi ảnh di chuyển ra ngoài */
+  background-color: #f0f0f0;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+ 
+}
+
+.layer {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 8px;
+
+}
+
+.layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#layer1 {
+  top: 50px;
+  left: 50%;
+  background-color: #ffcccc;
+}
+
+#layer2 {
+  top: 0px;
+  left: 50px;
+  transform: translateX(-50%);
+  background-color: #ccffcc;
+}
